@@ -1,0 +1,125 @@
+.about-page {
+    color: #ffffff;
+    padding: 100px 20px 60px;
+    font-family: "Nordhead", sans-serif;
+    background: rgba(0, 0, 0, 0.55);
+  }
+  
+  .section-title {
+    font-size: 22px;
+    font-weight: bolder;
+    color: #b1dd40;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+  }
+  
+  .section-description {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: justify;
+    color: #eaeaea;
+    transition: all 0.3s ease;
+  }
+  
+  .user-groups-section {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .group-title {
+    font-size: 25px;
+    margin-bottom: 2.5rem;
+    color: #b1dd40;
+    transition: all 0.3s ease;
+  }
+  
+  /* Larger cards with glow effect */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+  }
+  
+  .user-card {
+    background-color: #111;
+    border: 1px solid rgba(177, 221, 64, 0.15);
+    padding: 2rem;
+    width: 320px;
+    min-height: 260px;
+    border-radius: 20px;
+    box-shadow: 0 0 14px rgba(177, 221, 64, 0.08);
+    transition: all 0.4s ease;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  
+  .user-card:hover {
+    box-shadow: 0 0 24px rgba(177, 221, 64, 0.6);
+    transform: translateY(-6px);
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .user-card:hover .icon {
+    transform: scale(1.2);
+    animation: bounce 0.5s ease;
+  }
+  
+  .user-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+  }
+  
+  .user-description {
+    font-size: 16px;
+    text-align: justify;
+    color: #cccccc;
+    line-height: 1.6;
+    padding: 0 4px;
+  }
+  
+  /* Bounce animation */
+  @keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1.2); }
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .user-card {
+      width: 90%;
+    }
+  
+    .section-title {
+      font-size: 20px;
+    }
+  
+    .group-title {
+      font-size: 17px;
+    }
+  }
+  

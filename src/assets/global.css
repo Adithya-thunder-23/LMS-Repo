@@ -1,0 +1,14 @@
+:root {
+    --text-color: #1a1a1a;
+    font-family: Nordhead, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--text-color);
+  }
+  
+  /* Background for Landing Page Only */
+  .landing-page {
+    background-color: var(--background-color);
+    min-height: 100vh;
+  }
+  

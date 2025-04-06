@@ -1,0 +1,144 @@
+.login-page {
+  background-color: #b1dd40;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1300px;
+}
+
+.left-section {
+  flex: 1.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-logo {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.right-section {
+  flex: 1.8;
+  padding: 4rem;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 10px 6px 20px rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  min-width: 500px; 
+  box-sizing: border-box;
+}
+
+.login-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2.7rem;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.5rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  text-align: left;
+  direction: ltr;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #1a1a1a;
+  color: #b1dd40;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.google-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  color: #1a1a1a;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.google-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.google-icon {
+  width: 48px;
+  height: 48px;
+  background: none;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.signup-link a {
+  color: #111edc;
+  text-decoration: none;
+}
+
+.forgot-password {
+  text-align: left;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  text-decoration-color: #111edc;
+  display: block;
+}
+
+.forgot-password a {
+  color: #111edc;
+  text-decoration: none;
+}
+
+.left-section, .right-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
