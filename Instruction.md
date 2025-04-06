@@ -1,0 +1,1 @@
+Handle this project properly with necessary documentation and communication with the client.
