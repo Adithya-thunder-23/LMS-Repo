@@ -2,7 +2,24 @@
 import { ref, onMounted } from "vue";
 import "../assets/landing.css";
 
+const glowBox = ref(null)
+const isVisible = ref(false)
 const activeDropdown = ref<string | null>(null);
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        isVisible.value = true
+      }
+    },
+    { threshold: 0.5 }
+  )
+
+  if (glowBox.value) {
+    observer.observe(glowBox.value)
+  }
+})
 
 const toggleDropdown = (menu: string) => {
   activeDropdown.value = activeDropdown.value === menu ? null : menu;
@@ -119,6 +136,18 @@ onMounted(() => {
           </div>
         </div>
       </section>
+      <section class="contact-section">
+          <div ref="glowBox" :class="['glow-box', { 'glow-on-scroll': isVisible }]">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+              <input type="text" placeholder="Your name" required />
+              <input type="email" placeholder="Your email" required />
+              <input type="tel" placeholder="Your phone number" required />
+              <textarea placeholder="Your message..." rows="4" required></textarea>
+              <button type="submit" class="glow-button">Send Message</button>
+            </form>
+          </div>
+        </section>
     </main>
   </div>
 </template>
